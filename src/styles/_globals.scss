@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+// Menu
+.menu {
+  background-color: #333;
+  width: 100%;
+  padding: rem(20px) 0;
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: rem(30px);
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: rem(18px);
+        transition: color 0.3s ease;
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
