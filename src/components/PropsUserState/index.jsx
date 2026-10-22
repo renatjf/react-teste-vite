@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { PropsUserState } from "./Props-userState";
+import { CodigoExemplo } from "../CodigoExemplo/CodigoExemplo";
+import codigoIndex from "./index.jsx?raw";
+import codigoPropsUserState from "./Props-userState.jsx?raw";
+
 export function IndexPropsUserState() {
   const [visivel, setVisivel] = useState(false);
 
@@ -14,6 +18,12 @@ export function IndexPropsUserState() {
           {visivel ? "Esconder" : "Mostrar"}
         </button>
       </div>
+      <CodigoExemplo
+        arquivos={[
+          { nome: "Props-userState.jsx", codigo: codigoPropsUserState },
+          { nome: "index.jsx", codigo: codigoIndex },
+        ]}
+      />
     </>
   );
 }

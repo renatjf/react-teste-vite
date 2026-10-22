@@ -5,25 +5,80 @@
   list-style: none;
 }
 
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: rem(16);
+}
+
 // Menu
 .menu {
   background-color: #333;
   width: 100%;
   padding: rem(20px) 0;
+
   ul {
-    display: flex;
-    justify-content: center;
-    gap: rem(30px);
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: rem(10px);
+    width: 100%;
+    max-width: rem(1200px);
+    margin: 0 auto;
+    padding: 0 rem(10px);
+
     li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.ativo {
+        background-color: #e41515;
+        padding: rem(5px);
+        border-radius: rem(5px);
+      }
+
       a {
         color: #fff;
         text-decoration: none;
         font-size: rem(18px);
+        text-align: center;
         transition: color 0.3s ease;
+
         &:hover {
           color: #ccc;
         }
       }
     }
   }
+}
+
+@media (max-width: 1000px) {
+  .menu ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .menu ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+//container
+.container {
+  max-width: rem(1200px);
+  margin: 0 auto;
+  padding: rem(20px);
 }
