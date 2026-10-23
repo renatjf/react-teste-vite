@@ -1,0 +1,17 @@
+export type ExemploAtivo =
+  | "indexProps"
+  | "indexPropsUserState"
+  | "indexZustand"
+  | "indexZustandAPI"
+  | "indexDesignPatterns"
+  | "indexUserLayoutEffect"
+  | "indexUseMemo"
+  | "indexUseEffectApi"
+  | "indexUseEffect"
+  | "indexUseState"
+  | "indexUseReducer"
+  | "indexUseRef"
+  | "indexUseCallback"
+  | "indexUseContext"
+  | "indexApolloClient"
+  | null;

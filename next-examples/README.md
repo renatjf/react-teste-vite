@@ -1,6 +1,6 @@
 # Next.js Exemplos
 
-Projeto separado com exemplos práticos de Next.js 16 usando o App Router, JavaScript e a pasta `src/app`.
+Projeto separado com exemplos práticos de Next.js 16 usando o App Router, TypeScript e a pasta `src/app`.
 
 Para as instruções gerais dos dois projetos do repositório, consulte o [README da raiz](../README.md).
 
@@ -31,17 +31,18 @@ npm run build
 npm run start
 ```
 
-## Lint
+## Lint e tipos
 
 ```bash
 npm run lint
+npm run typecheck
 ```
 
 ## Exemplos
 
 | Rota | Conteúdo |
 | --- | --- |
-| `/app-router` | Layouts aninhados, `loading.js`, `error.js`, `not-found.js` e estado preservado no layout |
+| `/app-router` | Layouts aninhados, `loading.tsx`, `error.tsx`, `not-found.tsx` e estado preservado no layout |
 | `/server-client` | Server Components, Client Components e composição com `children` |
 | `/data-fetching` | `fetch` no servidor, requisições paralelas, cache, revalidação e streaming com Suspense |
 | `/dynamic-routes` | Rotas `[id]`, `await params`, `generateMetadata`, `Link` e `useRouter` |

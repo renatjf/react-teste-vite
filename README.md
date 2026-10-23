@@ -19,7 +19,7 @@ Cada projeto tem seu próprio `package.json` e `node_modules`. Instale as depend
 .
 ├── src/                 # app Vite + React
 ├── cypress/             # testes E2E do app Vite
-├── cypress.config.js
+├── cypress.config.ts
 ├── package.json
 ├── next-examples/       # projeto Next.js separado
 │   ├── src/app/
@@ -46,8 +46,10 @@ Cada projeto tem seus próprios testes. Execute os comandos na pasta indicada.
 
 | Projeto | Pasta | Comando | O que testa |
 | --- | --- | --- | --- |
+| Vite + React | raiz | `npm run typecheck` | Verificação de tipos com TypeScript |
 | Vite + React | raiz | `npm run test:run` | Testes unitários com Vitest |
 | Vite + React | raiz | `npm run test:e2e` | Fluxos da interface com Cypress |
+| Next.js | `next-examples` | `npm run typecheck` | Verificação de tipos com TypeScript |
 | Next.js | `next-examples` | `npm run lint && npm run build` | Lint e build (não possui testes automatizados) |
 | NestJS | `nest-examples` | `npm test` | Testes unitários com Jest |
 | NestJS | `nest-examples` | `npm run test:e2e` | Testes da API com Supertest |
